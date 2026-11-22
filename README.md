@@ -23,40 +23,46 @@ The analytics workflow includes:
 - Measure delivery performance and late deliveries.
 - Generate actionable business insights.
 
+
 ## Tools & Technologies
 
-                      Category                                           Technologies 
-
-                    Programming                                            Python 
-                    Data Analysis                                          Pandas 
-                  Data Visualization                                   Matplotlib, Power BI 
-                     Database                                             PostgreSQL 
-                   Query Language                                           SQL 
-                 Development Environment                                   VS Code 
+| Category | Technologies |
+|---|---|
+| Programming Language | Python |
+| Data Analysis | Pandas |
+| Database | PostgreSQL |
+| Query Language | SQL |
+| Data Visualization | Matplotlib, Power BI |
+| Development Environment | VS Code |
+| Version Control | Git, GitHub |
 
 ## Dataset Overview
 
-The project uses nine Olist CSV datasets:
+This project uses the publicly available Olist Brazilian E-Commerce dataset, consisting of nine CSV files covering orders, customers, products, payments, reviews, sellers, and geolocation data.
 
-1. Orders
-2. Customers
-3. Order Items
-4. Order Payments
-5. Order Reviews
-6. Products
-7. Sellers
-8. Geolocation
-9. Product Category Translation
+**Dataset Source:** [Olist Brazilian E-Commerce Dataset – Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+
+**Note:** The original CSV datasets are not included in this GitHub repository to keep it lightweight. Download the datasets separately and place the CSV files inside the `data/` folder before running the data loading scripts.
+
+## Datasets used:
+- Orders
+- Customers
+- Order Items
+- Order Payments
+- Order Reviews
+- Products
+- Sellers
+- Geolocation
+- Product Category Translation
 
 ## Key Performance Indicators
 
-          KPI                     Result 
-
-       Total Orders               99,441 
-     Unique Customers             99,441  
-      Total Revenue            ₹16.01 Million 
-     Average Delivery Days        12.50 
-      Late Delivery Rate          8.11% 
+| KPI | Result |
+| Total Orders | 99,441 |
+| Unique Customers | 99,441 |
+| Total Revenue | ₹16.01 Million |
+| Average Delivery Days | 12.50 |
+| Late Delivery Rate | 8.11% |
 
 ## Business Analysis
 
@@ -142,32 +148,38 @@ Dashboard includes:
 - 5-star reviews represented the largest review group.
 - 8.11% of delivered orders with available delivery dates were late.
 
+
 ## Project Structure
 
 ```text
-AI-Businness-Intelligence-Agent/
+Olist-Ecommerce-BI-AI-Analyst-Agent/
 │
 ├── data/
-│   ├── olist_orders_dataset.csv
-│   ├── olist_customers_dataset.csv
-│   ├── olist_order_items_dataset.csv
-│   ├── olist_order_payments_dataset.csv
-│   ├── olist_order_reviews_dataset.csv
-│   ├── olist_products_dataset.csv
-│   ├── olist_sellers_dataset.csv
-│   ├── olist_geolocation_dataset.csv
-│   └── product_category_name_translation.csv
 │   └── load_olist_data.py
+│
 ├── docs/
 │   └── project_report.md
 │
 ├── sql/
 │   └── business_analysis.sql
 │
+├── visualizations/
+│   ├── customer_review_analysis.png
+│   ├── customer_state_analysis.png
+│   ├── delivery_performance_analysis.png
+│   ├── monthly_revenue_trend.png
+│   ├── payment_type_distribution.png
+│   ├── power_bi_dashboard.png
+│   └── top_10_categories_revenue.png
+│
+├── .gitignore
+├── README.md
+├── Olist_Business_Intelligence_Dashboard.pbix
+├── data_quality_report.csv
+├── import_data.py
 ├── python_business_analysis.py
 ├── python_visualizations.py
-├── data_quality_report.csv
-└── README.md
+└── test_connection.py
 ```
 
 ## Project Documentation
