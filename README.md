@@ -58,6 +58,7 @@ This project uses the publicly available Olist Brazilian E-Commerce dataset, con
 ## Key Performance Indicators
 
 | KPI | Result |
+|---|---|
 | Total Orders | 99,441 |
 | Unique Customers | 99,441 |
 | Total Revenue | ₹16.01 Million |
